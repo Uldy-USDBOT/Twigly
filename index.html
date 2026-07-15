@@ -1,181 +1,355 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twig.ly | Premium Digital Growth Asset</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        :root {
-            --primary: #10b981; /* Emerald Green */
-            --secondary: #fbbf24; /* Amber/Gold */
-            --bg: #064e3b; /* Dark Forest */
-            --card-bg: #065f46;
-            --text-main: #ecfdf5;
-            --text-dim: #a7f3d0;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Twig.ly | Premium Domain For Sale</title>
+<meta name="description" content="Twig.ly — a short, organic .ly domain. Perfect for nature brands, sustainable products, developer tools, or minimalist projects.">
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: var(--bg);
-            color: var(--text-main);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            position: relative;
-            background: radial-gradient(circle at center, rgba(16, 185, 129, 0.2) 0%, transparent 70%);
-        }
+<style>
+  :root{
+    --cream:#f6f1e7;
+    --cream-deep:#eee5d3;
+    --bark:#4a3b2a;
+    --bark-soft:#6b5842;
+    --moss:#5c7a4f;
+    --moss-light:#7fa06c;
+    --moss-pale:#e5ecdf;
+    --clay:#b5673a;
+    --white:#fffdf8;
+    --whatsapp:#25d366;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Karla', sans-serif;
+    background:var(--cream);
+    color:var(--bark);
+    min-height:100vh;
+    overflow-x:hidden;
+  }
+  .font-serif{font-family:'Fraunces', serif;}
 
-        .badge {
-            background: rgba(16, 185, 129, 0.1);
-            color: var(--primary);
-            padding: 8px 20px;
-            border-radius: 100px;
-            font-weight: 700;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            border: 1px solid rgba(16, 185, 129, 0.2);
-            margin-bottom: 30px;
-        }
+  .card{
+    background:var(--white);
+    border:1px solid rgba(74,59,42,0.1);
+    border-radius:1.1rem;
+  }
+  .card-hover{transition:all .35s cubic-bezier(.2,.8,.2,1);}
+  .card-hover:hover{
+    transform:translateY(-5px);
+    border-color:rgba(92,122,79,0.35);
+    box-shadow:0 22px 45px -18px rgba(74,59,42,0.18);
+  }
 
-        h1 {
-            font-size: clamp(4rem, 15vw, 8.5rem);
-            font-weight: 800;
-            letter-spacing: -4px;
-            background: linear-gradient(to bottom, #fff, #a7f3d0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            line-height: 1;
-        }
+  .moss-text{color:var(--moss);}
+  .clay-text{color:var(--clay);}
+  .bark-soft-text{color:var(--bark-soft);}
 
-        .tagline {
-            font-size: 1.5rem;
-            color: var(--text-dim);
-            margin-top: 20px;
-            max-width: 700px;
-        }
+  .btn-moss{
+    background:var(--moss);
+    color:var(--white);
+    font-weight:700;
+    transition:all .3s ease;
+  }
+  .btn-moss:hover{
+    background:var(--moss-light);
+    box-shadow:0 10px 25px -8px rgba(92,122,79,0.45);
+  }
 
-        /* Value Grid */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            max-width: 1200px;
-            margin: 100px auto;
-            padding: 0 20px;
-        }
+  .btn-outline{
+    border:1.5px solid var(--bark);
+    color:var(--bark);
+    transition:all .3s ease;
+  }
+  .btn-outline:hover{
+    background:var(--bark);
+    color:var(--white);
+  }
 
-        .card {
-            background: var(--card-bg);
-            padding: 40px;
-            border-radius: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: 0.4s;
-        }
+  .rise{
+    opacity:0; transform:translateY(24px);
+    animation:rise .85s cubic-bezier(.2,.8,.2,1) forwards;
+  }
+  @keyframes rise{to{opacity:1; transform:translateY(0);}}
+  .d1{animation-delay:.1s;} .d2{animation-delay:.2s;}
+  .d3{animation-delay:.3s;} .d4{animation-delay:.4s;}
 
-        .card:hover {
-            transform: translateY(-10px);
-            border-color: var(--secondary);
-            box-shadow: 0 20px 40px -20px rgba(16, 185, 129, 0.3);
-        }
+  .branch-line{
+    height:2px; width:56px;
+    background:var(--moss);
+    border-radius:2px;
+  }
 
-        .card i {
-            font-size: 40px;
-            color: var(--secondary);
-            margin-bottom: 20px;
-        }
+  /* Organic twig/branch decorative SVG line */
+  .twig-deco{
+    position:absolute;
+    opacity:0.5;
+  }
 
-        /* Price & CTA */
-        .cta-section {
-            padding: 100px 20px;
-            text-align: center;
-            background: rgba(6, 78, 59, 0.8);
-        }
+  .leaf-badge{
+    background:rgba(92,122,79,0.12);
+    color:var(--moss);
+  }
 
-        .price-tag {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 40px;
-            color: #fff;
-        }
+  .wa-float{
+    position:fixed;
+    bottom:24px;
+    left:24px;
+    z-index:50;
+    background:var(--whatsapp);
+    width:58px; height:58px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 8px 25px -5px rgba(37,211,102,0.55);
+    animation:wafloat 2.5s infinite;
+  }
+  @keyframes wafloat{
+    0%,100%{box-shadow:0 8px 25px -5px rgba(37,211,102,0.55);}
+    50%{box-shadow:0 8px 25px -5px rgba(37,211,102,0.85), 0 0 0 8px rgba(37,211,102,0.12);}
+  }
 
-        .whatsapp-btn {
-            display: inline-flex;
-            align-items: center;
-            background: #25d366;
-            color: white;
-            padding: 22px 50px;
-            border-radius: 18px;
-            font-size: 1.4rem;
-            font-weight: 800;
-            text-decoration: none;
-            transition: 0.3s;
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
-        }
+  ::selection{background:var(--moss-light); color:var(--white);}
 
-        .whatsapp-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 40px rgba(37, 211, 102, 0.5);
-        }
-
-        footer {
-            padding: 50px;
-            text-align: center;
-            color: var(--text-dim);
-            font-size: 14px;
-        }
-    </style>
+  .num-serif{
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    color:var(--clay);
+  }
+</style>
 </head>
 <body>
 
-    <section class="hero">
-        <div class="badge">Strategic Growth Asset</div>
-        <h1>Twig.ly</h1>
-        <p class="tagline">The essential brand for social connectivity, sustainable tech, and organic growth.</p>
-    </section>
+<!-- ============ Floating WhatsApp ============ -->
+<a href="https://wa.me/218918883918" target="_blank" class="wa-float">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.73 13.4L3 21l3.72-1.28a8.9 8.9 0 0 0 5.33 1.72h.01a8.94 8.94 0 0 0 8.93-8.93 8.9 8.9 0 0 0-3.39-6.19ZM12.06 19.9a7.4 7.4 0 0 1-3.77-1.04l-.27-.16-2.79.96.94-2.72-.18-.28a7.45 7.45 0 1 1 6.07 3.24Zm4.08-5.58c-.22-.11-1.31-.65-1.51-.72-.2-.08-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.16-.48.05-1.3-.65-2.15-1.16-3.01-2.63-.23-.39.23-.36.66-1.2.07-.15.04-.28-.03-.4-.07-.11-.6-1.45-.82-1.98-.22-.53-.44-.46-.6-.46-.15-.01-.33-.01-.5-.01-.17 0-.44.06-.68.32-.24.26-.9.88-.9 2.14 0 1.26.92 2.48 1.05 2.65.13.17 1.77 2.72 4.35 3.71 2.14.81 2.57.65 3.03.6.46-.04 1.48-.6 1.68-1.19.2-.58.2-1.08.14-1.19-.06-.1-.22-.16-.44-.27Z"/></svg>
+</a>
 
-    <section class="grid">
-        <div class="card">
-            <i class="fa-solid fa-seedling"></i>
-            <h3>Eco-Tech Native</h3>
-            <p>Perfect for sustainable platforms, Green-Tech startups, or carbon-offsetting protocols.</p>
-        </div>
-        <div class="card">
-            <i class="fa-solid fa-diagram-project"></i>
-            <h3>Branching Networks</h3>
-            <p>An ideal name for social networks, hierarchical data tools, or collaborative software.</p>
-        </div>
-        <div class="card">
-            <i class="fa-solid fa-gem"></i>
-            <h3>Rare 4-Letter Asset</h3>
-            <p>Ultra-short domains are increasingly rare. Twig.ly provides instant prestige and premium positioning.</p>
-        </div>
-    </section>
+<!-- ============ Header ============ -->
+<header class="max-w-6xl mx-auto px-4 md:px-6 py-6 md:py-8 flex items-center justify-between">
+  <div class="font-serif text-xl md:text-2xl font-semibold tracking-wide">
+    twig<span class="clay-text">.</span>ly
+  </div>
+  <nav class="hidden md:flex items-center gap-9 text-sm font-bold bark-soft-text">
+    <a href="#why" class="hover:text-[var(--bark)] transition">Why</a>
+    <a href="#uses" class="hover:text-[var(--bark)] transition">Use Cases</a>
+    <a href="#details" class="hover:text-[var(--bark)] transition">Details</a>
+  </nav>
+  <a href="https://wa.me/218918883918" target="_blank" class="btn-moss flex items-center gap-1.5 px-4 py-2 md:px-6 md:py-2.5 rounded-full text-xs md:text-sm">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="shrink-0"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.73 13.4L3 21l3.72-1.28a8.9 8.9 0 0 0 5.33 1.72h.01a8.94 8.94 0 0 0 8.93-8.93 8.9 8.9 0 0 0-3.39-6.19ZM12.06 19.9a7.4 7.4 0 0 1-3.77-1.04l-.27-.16-2.79.96.94-2.72-.18-.28a7.45 7.45 0 1 1 6.07 3.24Zm4.08-5.58c-.22-.11-1.31-.65-1.51-.72-.2-.08-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.16-.48.05-1.3-.65-2.15-1.16-3.01-2.63-.23-.39.23-.36.66-1.2.07-.15.04-.28-.03-.4-.07-.11-.6-1.45-.82-1.98-.22-.53-.44-.46-.6-.46-.15-.01-.33-.01-.5-.01-.17 0-.44.06-.68.32-.24.26-.9.88-.9 2.14 0 1.26.92 2.48 1.05 2.65.13.17 1.77 2.72 4.35 3.71 2.14.81 2.57.65 3.03.6.46-.04 1.48-.6 1.68-1.19.2-.58.2-1.08.14-1.19-.06-.1-.22-.16-.44-.27Z"/></svg>
+    <span class="hidden sm:inline">Chat on WhatsApp</span>
+    <span class="sm:hidden">Chat</span>
+  </a>
+</header>
 
-    <section class="cta-section">
-        <div class="price-tag">$Make a presentation</div>
-        <a href="https://wa.me/218917021437?text=Interested%20in%20acquiring%20Twig.ly" class="whatsapp-btn">
-            <i class="fa-brands fa-whatsapp" style="margin-right: 15px;"></i>
-            Secure This Domain
+<!-- ============ Hero ============ -->
+<section class="max-w-6xl mx-auto px-4 md:px-6 py-14 md:py-24 relative">
+  <div class="grid md:grid-cols-[1.1fr_0.9fr] gap-10 md:gap-12 items-center">
+
+    <div class="rise">
+      <span class="leaf-badge inline-block text-xs font-bold px-4 py-2 rounded-full mb-6">
+        🌿 DOMAIN LISTING
+      </span>
+      <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl font-semibold leading-[1.05] mb-6">
+        twig<span class="clay-text">.</span>ly
+      </h1>
+      <p class="text-base md:text-lg bark-soft-text leading-relaxed max-w-lg mb-9">
+        Small, simple, and rooted in nature. A short domain with organic warmth —
+        perfect for sustainable brands, developer tools, or minimalist projects.
+      </p>
+      <div class="flex flex-wrap gap-3 md:gap-4">
+        <a href="https://wa.me/218918883918" target="_blank" class="btn-moss flex items-center gap-2 px-7 py-3.5 md:px-8 md:py-4 rounded-full text-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="shrink-0"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.73 13.4L3 21l3.72-1.28a8.9 8.9 0 0 0 5.33 1.72h.01a8.94 8.94 0 0 0 8.93-8.93 8.9 8.9 0 0 0-3.39-6.19ZM12.06 19.9a7.4 7.4 0 0 1-3.77-1.04l-.27-.16-2.79.96.94-2.72-.18-.28a7.45 7.45 0 1 1 6.07 3.24Zm4.08-5.58c-.22-.11-1.31-.65-1.51-.72-.2-.08-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.16-.48.05-1.3-.65-2.15-1.16-3.01-2.63-.23-.39.23-.36.66-1.2.07-.15.04-.28-.03-.4-.07-.11-.6-1.45-.82-1.98-.22-.53-.44-.46-.6-.46-.15-.01-.33-.01-.5-.01-.17 0-.44.06-.68.32-.24.26-.9.88-.9 2.14 0 1.26.92 2.48 1.05 2.65.13.17 1.77 2.72 4.35 3.71 2.14.81 2.57.65 3.03.6.46-.04 1.48-.6 1.68-1.19.2-.58.2-1.08.14-1.19-.06-.1-.22-.16-.44-.27Z"/></svg>
+          Message on WhatsApp
         </a>
-    </section>
+        <a href="#uses" class="btn-outline px-7 py-3.5 md:px-8 md:py-4 rounded-full text-sm font-bold">
+          Explore Use Cases
+        </a>
+      </div>
+    </div>
 
-    <footer>
-        &copy; 2026 Twig.ly | Managed by Uldy-USDBOT | Immediate Domain Transfer
-    </footer>
+    <div class="rise d1">
+      <div class="card overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1441829266145-9e8faa63b8b1?w=650&h=500&fit=crop"
+          alt="Twig branch nature" class="w-full object-cover" style="aspect-ratio:4/3.1">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ Stats ============ -->
+<section class="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-10">
+  <div class="grid grid-cols-3 gap-3 md:gap-6">
+    <div class="card card-hover p-5 md:p-7 text-center rise d1">
+      <p class="font-serif text-3xl md:text-4xl font-semibold moss-text mb-1">4</p>
+      <p class="text-[10px] md:text-xs bark-soft-text font-bold uppercase tracking-wide">Characters</p>
+    </div>
+    <div class="card card-hover p-5 md:p-7 text-center rise d2">
+      <p class="font-serif text-3xl md:text-4xl font-semibold moss-text mb-1">.ly</p>
+      <p class="text-[10px] md:text-xs bark-soft-text font-bold uppercase tracking-wide">Rare TLD</p>
+    </div>
+    <div class="card card-hover p-5 md:p-7 text-center rise d3">
+      <p class="font-serif text-3xl md:text-4xl font-semibold moss-text mb-1">1</p>
+      <p class="text-[10px] md:text-xs bark-soft-text font-bold uppercase tracking-wide">Direct Owner</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Why ============ -->
+<section id="why" class="max-w-6xl mx-auto px-4 md:px-6 py-12 md:py-16">
+  <div class="mb-10 md:mb-12 rise">
+    <div class="branch-line mb-5"></div>
+    <h2 class="font-serif text-3xl md:text-5xl font-semibold mb-3">Why Twig.ly?</h2>
+    <p class="bark-soft-text max-w-xl">A name that's small in size but rich in meaning — simplicity, growth, and nature.</p>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-5">
+    <div class="card card-hover p-6 md:p-9 rise d1">
+      <p class="num-serif text-4xl mb-4">01</p>
+      <h3 class="font-bold text-lg mb-2">Natural & Organic</h3>
+      <p class="text-sm bark-soft-text leading-relaxed">Evokes nature, growth, and simplicity — ideal for eco-friendly brands, gardens, or wellness products.</p>
+    </div>
+    <div class="card card-hover p-6 md:p-9 rise d2">
+      <p class="num-serif text-4xl mb-4">02</p>
+      <h3 class="font-bold text-lg mb-2">Developer-Friendly</h3>
+      <p class="text-sm bark-soft-text leading-relaxed">Recognizable to developers familiar with templating tools — a clever fit for dev-focused products.</p>
+    </div>
+    <div class="card card-hover p-6 md:p-9 rise d3">
+      <p class="num-serif text-4xl mb-4">03</p>
+      <h3 class="font-bold text-lg mb-2">Short & Memorable</h3>
+      <p class="text-sm bark-soft-text leading-relaxed">Just four letters — easy to type, spell, and remember. A rare find in today's domain market.</p>
+    </div>
+    <div class="card card-hover p-6 md:p-9 rise d4">
+      <p class="num-serif text-4xl mb-4">04</p>
+      <h3 class="font-bold text-lg mb-2">Minimalist Identity</h3>
+      <p class="text-sm bark-soft-text leading-relaxed">Opens the door to a clean, warm brand identity — soft, approachable, and distinct.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Use Cases ============ -->
+<section id="uses" class="max-w-6xl mx-auto px-4 md:px-6 py-12 md:py-16">
+  <div class="mb-10 md:mb-12 rise">
+    <div class="branch-line mb-5"></div>
+    <h2 class="font-serif text-3xl md:text-5xl font-semibold">Built For</h2>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+    <div class="card card-hover p-5 md:p-6 text-center rise d1">
+      <p class="text-2xl mb-2">🌱</p>
+      <p class="text-xs md:text-sm font-bold">Eco Brands</p>
+    </div>
+    <div class="card card-hover p-5 md:p-6 text-center rise d2">
+      <p class="text-2xl mb-2">🧘</p>
+      <p class="text-xs md:text-sm font-bold">Wellness</p>
+    </div>
+    <div class="card card-hover p-5 md:p-6 text-center rise d3">
+      <p class="text-2xl mb-2">💻</p>
+      <p class="text-xs md:text-sm font-bold">Dev Tools</p>
+    </div>
+    <div class="card card-hover p-5 md:p-6 text-center rise d4">
+      <p class="text-2xl mb-2">🏡</p>
+      <p class="text-xs md:text-sm font-bold">Home & Garden</p>
+    </div>
+    <div class="card card-hover p-5 md:p-6 text-center rise d1">
+      <p class="text-2xl mb-2">🎨</p>
+      <p class="text-xs md:text-sm font-bold">Creative Studios</p>
+    </div>
+    <div class="card card-hover p-5 md:p-6 text-center rise d2">
+      <p class="text-2xl mb-2">📝</p>
+      <p class="text-xs md:text-sm font-bold">Blogs & Journals</p>
+    </div>
+    <div class="card card-hover p-5 md:p-6 text-center rise d3">
+      <p class="text-2xl mb-2">🍃</p>
+      <p class="text-xs md:text-sm font-bold">Sustainability</p>
+    </div>
+    <div class="card card-hover p-5 md:p-6 text-center rise d4">
+      <p class="text-2xl mb-2">🛍️</p>
+      <p class="text-xs md:text-sm font-bold">Boutique Shops</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Domain Details ============ -->
+<section id="details" class="max-w-6xl mx-auto px-4 md:px-6 py-12 md:py-16">
+  <div class="card p-6 md:p-14 rise">
+    <h3 class="font-serif text-2xl md:text-3xl font-semibold mb-8 md:mb-10">Domain Details</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+      <div>
+        <p class="text-[10px] md:text-xs bark-soft-text uppercase font-bold tracking-widest mb-2">Domain</p>
+        <p class="text-lg md:text-xl font-bold">Twig.ly</p>
+      </div>
+      <div>
+        <p class="text-[10px] md:text-xs bark-soft-text uppercase font-bold tracking-widest mb-2">Seller</p>
+        <p class="text-lg md:text-xl font-bold">Individual</p>
+      </div>
+      <div>
+        <p class="text-[10px] md:text-xs bark-soft-text uppercase font-bold tracking-widest mb-2">Method</p>
+        <p class="text-lg md:text-xl font-bold">Direct</p>
+      </div>
+      <div>
+        <p class="text-[10px] md:text-xs bark-soft-text uppercase font-bold tracking-widest mb-2">Status</p>
+        <p class="text-lg md:text-xl font-bold clay-text">Available</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Process ============ -->
+<section class="max-w-6xl mx-auto px-4 md:px-6 py-12 md:py-16">
+  <div class="mb-10 md:mb-12 rise">
+    <div class="branch-line mb-5"></div>
+    <h2 class="font-serif text-3xl md:text-5xl font-semibold">How It Works</h2>
+  </div>
+  <div class="grid md:grid-cols-3 gap-5">
+    <div class="card card-hover p-6 md:p-9 rise d1">
+      <p class="num-serif text-4xl mb-4">01</p>
+      <h4 class="font-bold mb-2">Message on WhatsApp</h4>
+      <p class="text-sm bark-soft-text">Tap the button and start a direct chat with the domain owner.</p>
+    </div>
+    <div class="card card-hover p-6 md:p-9 rise d2">
+      <p class="num-serif text-4xl mb-4">02</p>
+      <h4 class="font-bold mb-2">Negotiate Directly</h4>
+      <p class="text-sm bark-soft-text">Discuss price and transfer details — no brokers, no middlemen.</p>
+    </div>
+    <div class="card card-hover p-6 md:p-9 rise d3">
+      <p class="num-serif text-4xl mb-4">03</p>
+      <h4 class="font-bold mb-2">Secure Transfer</h4>
+      <p class="text-sm bark-soft-text">Ownership is transferred through the official domain registrar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Contact CTA ============ -->
+<section class="max-w-4xl mx-auto px-4 md:px-6 py-12 md:py-16 text-center">
+  <div class="card p-7 md:p-16 rise">
+    <div class="branch-line mx-auto mb-6"></div>
+    <h2 class="font-serif text-2xl md:text-4xl font-semibold mb-4">Ready to Own Twig.ly?</h2>
+    <p class="bark-soft-text mb-8 max-w-md mx-auto">Message the owner directly on WhatsApp to discuss your offer.</p>
+    <a href="https://wa.me/218918883918" target="_blank" class="btn-moss inline-flex items-center gap-3 px-8 py-4 rounded-full text-sm md:text-base">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="shrink-0"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.73 13.4L3 21l3.72-1.28a8.9 8.9 0 0 0 5.33 1.72h.01a8.94 8.94 0 0 0 8.93-8.93 8.9 8.9 0 0 0-3.39-6.19ZM12.06 19.9a7.4 7.4 0 0 1-3.77-1.04l-.27-.16-2.79.96.94-2.72-.18-.28a7.45 7.45 0 1 1 6.07 3.24Zm4.08-5.58c-.22-.11-1.31-.65-1.51-.72-.2-.08-.35-.11-.5.11-.15.22-.57.72-.7.87-.13.15-.26.16-.48.05-1.3-.65-2.15-1.16-3.01-2.63-.23-.39.23-.36.66-1.2.07-.15.04-.28-.03-.4-.07-.11-.6-1.45-.82-1.98-.22-.53-.44-.46-.6-.46-.15-.01-.33-.01-.5-.01-.17 0-.44.06-.68.32-.24.26-.9.88-.9 2.14 0 1.26.92 2.48 1.05 2.65.13.17 1.77 2.72 4.35 3.71 2.14.81 2.57.65 3.03.6.46-.04 1.48-.6 1.68-1.19.2-.58.2-1.08.14-1.19-.06-.1-.22-.16-.44-.27Z"/></svg>
+      +218 91 888 3918
+    </a>
+  </div>
+</section>
+
+<!-- ============ Footer ============ -->
+<footer class="max-w-6xl mx-auto px-4 md:px-6 py-10 md:py-12 text-center border-t" style="border-color:rgba(74,59,42,0.1)">
+  <div class="font-serif text-lg md:text-xl font-semibold mb-2">
+    twig<span class="clay-text">.</span>ly
+  </div>
+  <p class="text-xs bark-soft-text">
+    Premium domain listed by its individual owner &copy; 2026
+  </p>
+</footer>
 
 </body>
 </html>
